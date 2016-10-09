@@ -35,13 +35,3 @@ $(document).ready(function() {
     });
   });
 });
-
-
-
-$('.active').each(function(){
-   $(this).removeClass('active');
-});
-
-    if (jQuery('#image1').hasClass('crsl-active')){
-        jQuery(".pager1").toggleClass("active");
-    }
