@@ -16,13 +16,17 @@ $(document).ready(function() {
 
 
 
+  $('button').on('click', function() {
+
+    var counter = 0;
+
       $('button').on('click', function() {
-        $(this).counter = 0; //not sure how to make set this outside scope
+        console.log(counter);
 
-        $(this).parent().addClass('strikeThroughAndGray')
-        $(this).counter++
+        $(this).parent().addClass('strikeThroughAndGray');
+        counter++;
 
-        if ($this.counter > 0) {
+        if (counter > 0) {
           $(this).parent().remove();
         }
 
@@ -34,4 +38,5 @@ $(document).ready(function() {
 
     });
   });
+});
 });
